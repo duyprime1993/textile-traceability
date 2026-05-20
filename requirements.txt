@@ -1,0 +1,39 @@
+# ── Core / Lõi ────────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+
+# ── Database / Cơ sở dữ liệu ──────────────────────────────────────────────────
+sqlalchemy>=2.0.30
+alembic>=1.13.0
+
+# Production DB driver (dùng khi chuyển sang PostgreSQL)
+# psycopg2-binary>=2.9.9
+
+# Demo DB (SQLite – không cần cài thêm)
+# Included in Python standard library
+
+# ── Auth / Xác thực ───────────────────────────────────────────────────────────
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.9
+
+# ── Excel Import/Export / Nhập xuất Excel ────────────────────────────────────
+openpyxl>=3.1.2
+pandas>=2.2.0
+xlsxwriter>=3.2.0
+
+# ── Frontend (Streamlit demo) / Giao diện demo ────────────────────────────────
+streamlit>=1.35.0
+plotly>=5.22.0
+
+# ── Testing / Kiểm thử ────────────────────────────────────────────────────────
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0        # for FastAPI TestClient
+
+# ── Utils / Tiện ích ──────────────────────────────────────────────────────────
+python-dateutil>=2.9.0
+babel>=2.15.0        # Number/date formatting
+jinja2>=3.1.4        # Report templates
